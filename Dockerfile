@@ -18,7 +18,9 @@ RUN apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C3
 
 RUN apt-get update && apt-get install -y ros-melodic-desktop
 
-RUN apt-get install -y python-rospy
+RUN apt-get install -y python-rospy && apt-get install -y wget
+
+RUN apt-get install -y unzip
 
 RUN rosdep init && rosdep update
 
