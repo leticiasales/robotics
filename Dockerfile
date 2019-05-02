@@ -18,6 +18,10 @@ RUN apt-get install -y python-rospy && apt-get install -y unzip
 
 RUN chmod +x install_opencv2.sh && ./install_opencv2.sh
 
+RUN pip install --upgrade pip && pip install pyyaml
+
+RUN pip install rospkg && pip install opencv-python
+
 RUN rosdep init && rosdep update
 
 # Make port 80 available to the world outside this container
