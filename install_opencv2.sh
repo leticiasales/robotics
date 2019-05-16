@@ -17,8 +17,8 @@
 
 
 ### Dependencies
-apt-get update
-apt-get install -y build-essential cmake libgtk2.0-dev pkg-config \
+sudo apt-get update
+sudo apt-get install -y build-essential cmake libgtk2.0-dev pkg-config \
                         python-numpy python-dev libavcodec-dev libavformat-dev \
                         libswscale-dev libjpeg-dev libpng12-dev libtiff5-dev \
                         libjasper-dev libopencv-dev checkinstall pkg-config \
@@ -46,7 +46,7 @@ make install
 cd ../../
 rm -rf ./opencv-2.4.13.5
 
-apt-get install python-opencv -y
+sudo apt-get install python-opencv -y
 
 ### Echoes OpenCV installed version if installation process was successful
 echo -e "OpenCV version:"
